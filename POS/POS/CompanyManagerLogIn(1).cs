@@ -26,9 +26,18 @@ namespace POS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CManagerDashBoard cManagerDashBoard = new CManagerDashBoard();
-            this.Hide();    
-            cManagerDashBoard.Show();
+            string pass = Password.Text;
+
+            if (true) //check if branchID, pass is available
+            {
+                CManagerDashBoard mDashboard = new CManagerDashBoard();
+                this.Hide();
+                mDashboard.Show();
+            }
+            else
+            {
+                passMitchMatch.Text = "Password didn't match";
+            } 
         }
     }
 }

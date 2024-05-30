@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,9 +35,19 @@ namespace POS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BDashboard mDashboard = new BDashboard();
-            this.Hide();
-            mDashboard.Show();
+            string branchID = branchIDtextBox.Text;
+            string password = PasswordTextBox.Text;
+
+            if (true) //check if branchID, pass is available
+            { 
+                BDashboard mDashboard = new BDashboard();
+                this.Hide();
+                mDashboard.Show();
+            }
+            else
+            {
+                PassMismaatch.Text = "Credentials didn't match";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -44,6 +55,11 @@ namespace POS
             LandingPge form1 = new LandingPge();
             this.Hide();
             form1.Show();
+        }
+
+        private void PassMismaatch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

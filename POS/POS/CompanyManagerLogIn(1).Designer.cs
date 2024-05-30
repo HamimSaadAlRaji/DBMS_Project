@@ -31,14 +31,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.passMitchMatch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(311, 332);
+            this.button2.Location = new System.Drawing.Point(311, 345);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(173, 38);
             this.button2.TabIndex = 11;
@@ -50,7 +51,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(253, 219);
+            this.label2.Location = new System.Drawing.Point(253, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 9;
@@ -59,7 +60,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(311, 294);
+            this.button1.Location = new System.Drawing.Point(311, 307);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 32);
             this.button1.TabIndex = 8;
@@ -67,13 +68,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(248, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 29);
-            this.textBox2.TabIndex = 6;
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.Location = new System.Drawing.Point(248, 218);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(300, 29);
+            this.Password.TabIndex = 6;
             // 
             // label1
             // 
@@ -85,15 +86,26 @@
             this.label1.Text = "Login";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // passMitchMatch
+            // 
+            this.passMitchMatch.AutoSize = true;
+            this.passMitchMatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passMitchMatch.ForeColor = System.Drawing.Color.Red;
+            this.passMitchMatch.Location = new System.Drawing.Point(263, 260);
+            this.passMitchMatch.Name = "passMitchMatch";
+            this.passMitchMatch.Size = new System.Drawing.Size(0, 20);
+            this.passMitchMatch.TabIndex = 12;
+            // 
             // CompanyManagerLogIn_1_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.passMitchMatch);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Password);
             this.Controls.Add(this.label1);
             this.Name = "CompanyManagerLogIn_1_";
             this.Text = "CompanyManagerLogIn_1_";
@@ -107,7 +119,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label passMitchMatch;
     }
 }
