@@ -1,0 +1,11 @@
+C:\Users\mnala\source\repos\POS\POS\bin\Debug\POS.exe.config
+C:\Users\mnala\source\repos\POS\POS\bin\Debug\POS.exe
+C:\Users\mnala\source\repos\POS\POS\bin\Debug\POS.pdb
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.Form1.resources
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.Properties.Resources.resources
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.exe
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.pdb
+C:\Users\mnala\source\repos\POS\POS\obj\Debug\POS.BManagerLogin.resources

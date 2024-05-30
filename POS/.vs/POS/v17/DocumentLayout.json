@@ -1,0 +1,232 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mnala\\source\\repos\\POS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\binventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\binventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\bsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\neworder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\neworder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\neworder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\neworder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\bsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|C:\\Users\\mnala\\source\\repos\\POS\\pos\\mdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\mdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\mdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\mdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|c:\\users\\mnala\\source\\repos\\pos\\pos\\bmanagerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bmanagerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|C:\\Users\\mnala\\source\\repos\\POS\\pos\\bmanagerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bmanagerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|C:\\Users\\mnala\\source\\repos\\POS\\pos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|C:\\Users\\mnala\\source\\repos\\POS\\pos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BNewOrder2.cs",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BNewOrder2.cs",
+              "RelativeDocumentMoniker": "POS\\BNewOrder2.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BNewOrder2.cs",
+              "RelativeToolTip": "POS\\BNewOrder2.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:44:46.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BNewOrder2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BNewOrder2.cs",
+              "RelativeDocumentMoniker": "POS\\BNewOrder2.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BNewOrder2.cs [Design]",
+              "RelativeToolTip": "POS\\BNewOrder2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:31:32.034Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewOrder.cs",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\NewOrder.cs",
+              "RelativeDocumentMoniker": "POS\\NewOrder.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\NewOrder.cs",
+              "RelativeToolTip": "POS\\NewOrder.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:20:43.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NewOrder.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\NewOrder.cs",
+              "RelativeDocumentMoniker": "POS\\NewOrder.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\NewOrder.cs [Design]",
+              "RelativeToolTip": "POS\\NewOrder.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:18:20.68Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BSettings.cs",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BSettings.cs",
+              "RelativeDocumentMoniker": "POS\\BSettings.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BSettings.cs",
+              "RelativeToolTip": "POS\\BSettings.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:09:29.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BSettings.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BSettings.cs",
+              "RelativeDocumentMoniker": "POS\\BSettings.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BSettings.cs [Design]",
+              "RelativeToolTip": "POS\\BSettings.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:09:14.673Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BInventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BInventory.cs",
+              "RelativeDocumentMoniker": "POS\\BInventory.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BInventory.cs [Design]",
+              "RelativeToolTip": "POS\\BInventory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:04:46.142Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MDashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\MDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "POS\\MDashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\MDashboard.Designer.cs",
+              "RelativeToolTip": "POS\\MDashboard.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:01:14.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\MDashboard.cs",
+              "RelativeDocumentMoniker": "POS\\MDashboard.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\MDashboard.cs [Design]",
+              "RelativeToolTip": "POS\\MDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:23:33.895Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BManagerLogin.cs",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BManagerLogin.cs",
+              "RelativeDocumentMoniker": "POS\\BManagerLogin.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BManagerLogin.cs",
+              "RelativeToolTip": "POS\\BManagerLogin.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA7wCYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:16:29.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BManagerLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BManagerLogin.cs",
+              "RelativeDocumentMoniker": "POS\\BManagerLogin.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\BManagerLogin.cs [Design]",
+              "RelativeToolTip": "POS\\BManagerLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T05:51:49.867Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\Form1.cs",
+              "RelativeDocumentMoniker": "POS\\Form1.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\Form1.cs",
+              "RelativeToolTip": "POS\\Form1.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T05:44:47.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\Form1.cs",
+              "RelativeDocumentMoniker": "POS\\Form1.cs",
+              "ToolTip": "C:\\Users\\mnala\\source\\repos\\POS\\POS\\Form1.cs [Design]",
+              "RelativeToolTip": "POS\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T05:43:05.113Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
