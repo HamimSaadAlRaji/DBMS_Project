@@ -12,6 +12,7 @@ namespace POS
 {
     public partial class BNewOrder2 : Form
     {
+        Database db = Database.GetInstance();
         public BNewOrder2()
         {
             InitializeComponent();
@@ -20,6 +21,15 @@ namespace POS
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string contactNum = contactNumTB.Text;
+            string mail = mailTB.Text;
+            string name = nameTB.Text;
+            Customer Cus = new Customer(1, contactNum, mail, name);
+            db.newCustomer(Cus);
         }
     }
 }

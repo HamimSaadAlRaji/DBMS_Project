@@ -12,7 +12,7 @@ namespace POS
 {
     public partial class CmanageBranch : Form
     {
-        database db = new database();
+        //database db = new database();
         public CmanageBranch()
         {
             InitializeComponent();
@@ -32,9 +32,9 @@ namespace POS
             else
             {
                 branch newBracnch = new branch(branchName,district,branchLocaton);
-                string branchID = db.AddnewBranchAndGetBranchID(newBracnch);
+                //string branchID = db.AddnewBranchAndGetBranchID(newBracnch);
 
-                MessageBox.Show($"You have successfully added a branch.\nBranch ID: {branchID}\nRemember the branch ID to log into the branch account.");
+                //MessageBox.Show($"You have successfully added a branch.\nBranch ID: {branchID}\nRemember the branch ID to log into the branch account.");
 
             }
         }

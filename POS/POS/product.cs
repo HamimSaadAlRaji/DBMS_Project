@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace POS
 {
-    public class product
+    public class Product
     {
-        public string productID;
-        public string productName;
-        public string productDescription;
-        public int price;
-        public product(string productID, string productName, string productDescription, int price)
+        public string ProductID { get; set; }
+        public string ProductName { get; set; }
+        public string ProductDescription { get; set; }
+        public int Price { get; set; }
+
+        // Parameterized constructor
+        public Product(string productID, string productName, string productDescription, int price)
         {
-            this.productID = productID;
-            this.productName = productName;
-            this.productDescription = productDescription;
-            this.price = price;
+            ProductID = productID;
+            ProductName = productName;
+            ProductDescription = productDescription;
+            Price = price;
         }
     }
+
 }

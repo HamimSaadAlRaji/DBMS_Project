@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace POS
 {
-    public class supplier
+    public class Supplier
     {
-        public string suppilerId;
-        public string suppilerName;
-        public string contactNum;
-        public string Address;
+        public string SupplierId { get; set; }
+        public string SupplierName { get; set; }
+        public string ContactNum { get; set; }
+        public string Address { get; set; }
 
+    
+        public Supplier(string supplierId, string supplierName, string contactNum, string address)
+        {
+            SupplierId = supplierId;
+            SupplierName = supplierName;
+            ContactNum = contactNum;
+            Address = address;
+        }
     }
 }
