@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class Form1 : Form
+    public partial class LandingPge : Form
     {
-        public Form1()
+        public LandingPge()
         {
             InitializeComponent();
         }
@@ -24,7 +24,9 @@ namespace POS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            CompanyManagerLogIn_1_ companyManagerLogIn_1_ = new CompanyManagerLogIn_1_();
+            this.Hide();
+            companyManagerLogIn_1_.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -33,6 +35,11 @@ namespace POS
             this.Hide();
             b.Show();
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

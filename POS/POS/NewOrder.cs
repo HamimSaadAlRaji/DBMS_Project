@@ -19,7 +19,9 @@ namespace POS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            BNewOrder2 bNewOrder2 = new BNewOrder2();
+            this.Hide();
+            bNewOrder2.Show();
         }
     }
 }

@@ -10,18 +10,28 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class BInventory : Form
+    public partial class CmanageBranch : Form
     {
-        public BInventory()
+        public CmanageBranch()
         {
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
-            BDashboard mDashboard = new BDashboard();
+            CManagerDashBoard cManagerDashBoard = new CManagerDashBoard();
             this.Hide();
-            mDashboard.Show();
+            cManagerDashBoard.Show();
         }
     }
 }

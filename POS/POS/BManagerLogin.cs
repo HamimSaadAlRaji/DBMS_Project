@@ -34,9 +34,16 @@ namespace POS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MDashboard mDashboard = new MDashboard();
-            mDashboard.Show();
+            BDashboard mDashboard = new BDashboard();
             this.Hide();
+            mDashboard.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LandingPge form1 = new LandingPge();
+            this.Hide();
+            form1.Show();
         }
     }
 }

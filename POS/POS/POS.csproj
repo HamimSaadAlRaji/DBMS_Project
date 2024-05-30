@@ -70,17 +70,53 @@
     <Compile Include="BSettings.Designer.cs">
       <DependentUpon>BSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="CmanageBranch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CmanageBranch.Designer.cs">
+      <DependentUpon>CmanageBranch.cs</DependentUpon>
     </Compile>
-    <Compile Include="MDashboard.cs">
+    <Compile Include="CManagerDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MDashboard.Designer.cs">
-      <DependentUpon>MDashboard.cs</DependentUpon>
+    <Compile Include="CManagerDashBoard.Designer.cs">
+      <DependentUpon>CManagerDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CmanagerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CmanagerSetting.Designer.cs">
+      <DependentUpon>CmanagerSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CmanageSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CmanageSuppliers.Designer.cs">
+      <DependentUpon>CmanageSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManagerLogIn%281%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyManagerLogIn%281%29.Designer.cs">
+      <DependentUpon>CompanyManagerLogIn%281%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandingPge.Designer.cs">
+      <DependentUpon>LandingPge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDashboard.Designer.cs">
+      <DependentUpon>BDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CManageExistingSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CManageExistingSupplier.Designer.cs">
+      <DependentUpon>CManageExistingSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="NewOrder.cs">
       <SubType>Form</SubType>
@@ -102,11 +138,29 @@
     <EmbeddedResource Include="BSettings.resx">
       <DependentUpon>BSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CmanageBranch.resx">
+      <DependentUpon>CmanageBranch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MDashboard.resx">
-      <DependentUpon>MDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="CManageExistingSupplier.resx">
+      <DependentUpon>CManageExistingSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CManagerDashBoard.resx">
+      <DependentUpon>CManagerDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CmanagerSetting.resx">
+      <DependentUpon>CmanagerSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CmanageSuppliers.resx">
+      <DependentUpon>CmanageSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyManagerLogIn%281%29.resx">
+      <DependentUpon>CompanyManagerLogIn%281%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPge.resx">
+      <DependentUpon>LandingPge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDashboard.resx">
+      <DependentUpon>BDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewOrder.resx">
       <DependentUpon>NewOrder.cs</DependentUpon>

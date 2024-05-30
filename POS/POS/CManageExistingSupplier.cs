@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class BInventory : Form
+    public partial class CManageExistingSupplier : Form
     {
-        public BInventory()
+        public CManageExistingSupplier()
         {
             InitializeComponent();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            BDashboard mDashboard = new BDashboard();
+            CmanageSuppliers cmanageSuppliers = new CmanageSuppliers();
             this.Hide();
-            mDashboard.Show();
+            cmanageSuppliers.Show();
         }
     }
 }
