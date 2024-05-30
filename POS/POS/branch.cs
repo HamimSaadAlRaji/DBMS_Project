@@ -8,14 +8,12 @@ namespace POS
 {
     public class branch
     {
-        public string branchName;
-        public string districtName;
+        public string branchName; 
         public string Location;
 
-        public branch(string branchName, string districtName, string location)
+        public branch(string branchName,   string location)
         {
-            this.branchName = branchName;
-            this.districtName = districtName;
+            this.branchName = branchName; 
             Location = location;
         }
 

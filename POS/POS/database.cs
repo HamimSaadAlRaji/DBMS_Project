@@ -1,9 +1,6 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
 using System.Windows.Forms;
 
 namespace POS
@@ -24,11 +21,8 @@ namespace POS
         public Customer findCustomer(string phoneNumber)
         {
             return null;
-        }
-        public string AddnewBranchAndGetBranchID(branch b)
-        {
-            return "null";
         }*/
+
 
         private Database() { }
 
@@ -100,10 +94,144 @@ namespace POS
                 return false;
             }
         }
+        public string AddnewBranchAndGetBranchID(branch b)
+        {
+            string insertQuery = "INSERT INTO Branch (Branch_Name, Address) VALUES (:BranchName, :Address)";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand();
+
+                command.CommandText = insertQuery;
+                command.Connection = con;
+
+                command.Parameters.Add(":BranchName", OracleDbType.Varchar2).Value = b.branchName;
+                command.Parameters.Add(":Address", OracleDbType.Varchar2).Value = b.Location;
+
+
+                int rowsInserted = command.ExecuteNonQuery();
+                con.Close();
+
+                if (rowsInserted > 0)
+                {
+                    MessageBox.Show("branch Added!");
+
+                }
+
+                 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return findBranchID(b.branchName,b.Location);
+        }
+        public string findBranchID(string branchName, string Adress)
+        {
+            string result = null;
+            string query = "SELECT Branch_ID FROM Branch WHERE Branch_Name = :BranchName AND Address = :Address";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand(query, con);
+
+                // Adding parameters to avoid SQL injection
+                command.Parameters.Add(":BranchName", OracleDbType.Varchar2).Value = branchName;
+                command.Parameters.Add(":Address", OracleDbType.Varchar2).Value = Adress;
+
+                // Execute the query and fetch the result
+                using (OracleDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        // Return the Branch_ID
+                        result =  reader["Branch_ID"].ToString();
+                    }
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+
+            }
+            return result;
+        }
+        public bool addNewCredential(string id, string pass)
+        {
+            string insertQuery = "INSERT INTO Credentials (Branch_ID, password) VALUES (:branchId, :password)";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand();
+
+                command.CommandText = insertQuery;
+                command.Connection = con;
+
+                // Assuming you have a 'credentials' object with properties 'BranchId' and 'Password'
+                command.Parameters.Add(":branchId", OracleDbType.Varchar2).Value = id;
+                command.Parameters.Add(":password", OracleDbType.Varchar2).Value = pass;
+
+                int rowsInserted = command.ExecuteNonQuery();
+
+                con.Close();
+
+                if (rowsInserted > 0)
+                {
+                    MessageBox.Show("Credentials Added!");
+                    return true;
+                }
+
+                MessageBox.Show("Credentials Exist!");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred (Credentials): " + ex.Message);
+                //con.Close();
+                return false;
+            }
+
+        }
+
+        //LogIn
+        public bool VerifyCredentials(string branchId, string password)
+        {
+            bool isValid = false;
+            string query = "SELECT COUNT(*) FROM Credentials WHERE Branch_ID = :BranchID AND password = :Password";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand(query, con);
+
+                // Adding parameters to avoid SQL injection
+                command.Parameters.Add(":BranchID", OracleDbType.Varchar2).Value = branchId;
+                command.Parameters.Add(":Password", OracleDbType.Varchar2).Value = password;
+
+                // Execute the query and fetch the result
+                int count = Convert.ToInt32(command.ExecuteScalar());
+                if (count > 0)
+                {
+                    isValid = true;
+                }
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                con.Close();
+            }
+            return isValid;
+        }
+
 
     }
-
-
-
 }
 

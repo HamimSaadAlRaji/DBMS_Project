@@ -28,7 +28,7 @@ namespace POS
         {
             string pass = Password.Text;
 
-            if (true) //check if branchID, pass is available
+            if (pass == "admin") //check if branchID, pass is available
             {
                 CManagerDashBoard mDashboard = new CManagerDashBoard();
                 this.Hide();

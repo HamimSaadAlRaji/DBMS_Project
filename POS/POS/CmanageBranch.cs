@@ -12,7 +12,7 @@ namespace POS
 {
     public partial class CmanageBranch : Form
     {
-        //database db = new database();
+        Database db = Database.GetInstance();
         public CmanageBranch()
         {
             InitializeComponent();
@@ -22,19 +22,18 @@ namespace POS
         { 
             string branchName = branchNameTextBox.Text;
             string branchLocaton = branchLocationTextBox.Text;
-            string district = DistrictTextBox.Text;
             string password = passwordTextBox.Text;
-            if (branchLocaton=="" || branchName=="" || district == "" || password == "")
+            if (branchLocaton=="" || branchName==""  || password == "")
             {
                 nullTextIdentifier.Text = "Can not be null";
                 return;
             }
             else
             {
-                branch newBracnch = new branch(branchName,district,branchLocaton);
-                //string branchID = db.AddnewBranchAndGetBranchID(newBracnch);
-
-                //MessageBox.Show($"You have successfully added a branch.\nBranch ID: {branchID}\nRemember the branch ID to log into the branch account.");
+                branch newBracnch = new branch(branchName,branchLocaton);
+                string branchID = db.AddnewBranchAndGetBranchID(newBracnch);
+                db.addNewCredential(branchID, password);
+                MessageBox.Show($"You have successfully added a branch.\nBranch ID: {branchID}\nRemember the branch ID to log into the branch account.");
 
             }
         }

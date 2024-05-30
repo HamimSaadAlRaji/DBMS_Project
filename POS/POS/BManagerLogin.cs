@@ -13,6 +13,7 @@ namespace POS
 {
     public partial class BManagerLogin : Form
     {
+        Database db = Database.GetInstance();
         public BManagerLogin()
         {
             InitializeComponent();
@@ -38,7 +39,9 @@ namespace POS
             string branchID = branchIDtextBox.Text;
             string password = PasswordTextBox.Text;
 
-            if (true) //check if branchID, pass is available
+            bool match = db.VerifyCredentials(branchID, password);
+
+            if (match) //check if branchID, pass is available
             { 
                 BDashboard mDashboard = new BDashboard();
                 this.Hide();

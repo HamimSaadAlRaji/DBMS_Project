@@ -34,8 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.branchLocationTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.DistrictTextBox = new System.Windows.Forms.TextBox();
             this.nullTextIdentifier = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
@@ -86,7 +84,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 127);
+            this.label2.Location = new System.Drawing.Point(42, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 20);
             this.label2.TabIndex = 12;
@@ -95,30 +93,12 @@
             // 
             // branchLocationTextBox
             // 
-            this.branchLocationTextBox.Location = new System.Drawing.Point(177, 127);
+            this.branchLocationTextBox.Location = new System.Drawing.Point(177, 99);
             this.branchLocationTextBox.Multiline = true;
             this.branchLocationTextBox.Name = "branchLocationTextBox";
             this.branchLocationTextBox.Size = new System.Drawing.Size(284, 69);
             this.branchLocationTextBox.TabIndex = 11;
             this.branchLocationTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 20);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "District:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // DistrictTextBox
-            // 
-            this.DistrictTextBox.Location = new System.Drawing.Point(177, 92);
-            this.DistrictTextBox.Name = "DistrictTextBox";
-            this.DistrictTextBox.Size = new System.Drawing.Size(284, 20);
-            this.DistrictTextBox.TabIndex = 13;
             // 
             // nullTextIdentifier
             // 
@@ -134,7 +114,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 219);
+            this.label4.Location = new System.Drawing.Point(42, 191);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 17;
@@ -143,7 +123,7 @@
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(177, 221);
+            this.passwordTextBox.Location = new System.Drawing.Point(177, 193);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(284, 20);
             this.passwordTextBox.TabIndex = 16;
@@ -154,7 +134,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(173, 244);
+            this.label5.Location = new System.Drawing.Point(173, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(398, 20);
             this.label5.TabIndex = 18;
@@ -170,8 +150,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.nullTextIdentifier);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.DistrictTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.branchLocationTextBox);
             this.Controls.Add(this.label1);
@@ -193,8 +171,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox branchLocationTextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox DistrictTextBox;
         private System.Windows.Forms.Label nullTextIdentifier;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox passwordTextBox;

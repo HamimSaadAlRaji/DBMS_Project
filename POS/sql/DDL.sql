@@ -123,6 +123,7 @@ CREATE SEQUENCE seq_transaction_id
   MAXVALUE 99999 
   NOCYCLE;
 
+-- ALTER SEQUENCE seq_supplier_id INCREMENT BY 1;  -- Assuming the current value is 100 and you want to set it to 1000
 
 -------------------------------------
 --Function to GenerateID
@@ -181,3 +182,11 @@ BEGIN
     :NEW.Transaction_ID := generate_id('trn', 'seq_transaction_id');
 END;
 /
+
+
+SELECT * from BRANCH;
+SELECT * from Credentials;
+
+select count(BRANCH_ID)
+from Credentials C
+where C.BRANCH_ID = 'brn00001';
