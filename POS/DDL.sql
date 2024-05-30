@@ -4,6 +4,11 @@ CREATE TABLE Branch (
     Branch_Name VARCHAR2(100),
     Address VARCHAR2(255)
 );
+CREATE TABLE Credentials (
+    Branch_ID VARCHAR2(8) PRIMARY KEY,
+    password  VARCHAR2(20),
+    FOREIGN KEY (Branch_ID) REFERENCES Branch(Branch_ID)
+);
 
 CREATE TABLE Supplier (
     Supplier_ID VARCHAR2(8) PRIMARY KEY,
