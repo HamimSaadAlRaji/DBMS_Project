@@ -9,14 +9,14 @@ namespace POS
 {
     public class Customer
     {
-        public int CustomerID { get; set; }
+        //public int CustomerID { get; set; }
         public string PhoneNum { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
 
-        public Customer(int customerID, string phoneNum, string name, string email)
+        public Customer(string phoneNum, string name, string email)
         {
-            CustomerID = customerID;
+            //CustomerID = customerID;
             PhoneNum = phoneNum;
             Name = name;
             Email = email;

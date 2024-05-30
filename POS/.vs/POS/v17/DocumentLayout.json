@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\pos\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|e:\\study materials\\academics\\fourth semester\\dbms_project\\dbms_project\\pos\\pos\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|e:\\study materials\\academics\\fourth semester\\dbms_project\\dbms_project\\pos\\pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\pos\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,11 +19,7 @@
       "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\bneworder2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\pos\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|e:\\study materials\\academics\\fourth semester\\dbms_project\\dbms_project\\pos\\pos\\cmanagebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\pos\\cmanagebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9327F6C7-6B8B-47A6-ADD7-1661AD3665E8}|POS\\POS.csproj|solutionrelative:pos\\cmanagebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -158,26 +158,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BNewOrder2.cs",
               "DocumentMoniker": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\BNewOrder2.cs",
               "RelativeDocumentMoniker": "POS\\BNewOrder2.cs",
               "ToolTip": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\BNewOrder2.cs",
               "RelativeToolTip": "POS\\BNewOrder2.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwB8AAAAgAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T17:57:13.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Customer.cs",
               "DocumentMoniker": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\Customer.cs",
               "RelativeDocumentMoniker": "POS\\Customer.cs",
               "ToolTip": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\Customer.cs",
               "RelativeToolTip": "POS\\Customer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA9wA4AAAApAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAswAsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T13:24:38.812Z",
               "EditorCaption": ""
@@ -190,7 +190,7 @@
               "RelativeDocumentMoniker": "POS\\database.cs",
               "ToolTip": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\database.cs",
               "RelativeToolTip": "POS\\database.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAIwEkAAABfAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAkwGAAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T13:13:00.757Z",
               "EditorCaption": ""
@@ -216,8 +216,7 @@
               "RelativeToolTip": "POS\\CmanageBranch.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAhwCQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T10:25:14.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T10:25:14.246Z"
             },
             {
               "$type": "Document",
@@ -241,6 +240,18 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T13:52:09.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BNewOrder2.cs [Design]",
+              "DocumentMoniker": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\BNewOrder2.cs",
+              "RelativeDocumentMoniker": "POS\\BNewOrder2.cs",
+              "ToolTip": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\BNewOrder2.cs [Design]",
+              "RelativeToolTip": "POS\\BNewOrder2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:31:32.034Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -447,18 +458,6 @@
               "RelativeToolTip": "POS\\NewOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T07:18:20.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BNewOrder2.cs [Design]",
-              "DocumentMoniker": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\BNewOrder2.cs",
-              "RelativeDocumentMoniker": "POS\\BNewOrder2.cs",
-              "ToolTip": "E:\\Study Materials\\Academics\\Fourth Semester\\DBMS_Project\\DBMS_Project\\POS\\POS\\BNewOrder2.cs [Design]",
-              "RelativeToolTip": "POS\\BNewOrder2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T07:31:32.034Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",

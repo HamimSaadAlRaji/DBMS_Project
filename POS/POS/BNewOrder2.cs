@@ -28,7 +28,7 @@ namespace POS
             string contactNum = contactNumTB.Text;
             string mail = mailTB.Text;
             string name = nameTB.Text;
-            Customer Cus = new Customer(1, contactNum, mail, name);
+            Customer Cus = new Customer(contactNum, mail, name);
             db.newCustomer(Cus);
         }
     }

@@ -52,11 +52,11 @@ namespace POS
             return conn;
         }
 
-        OracleConnection con = GetDBConnection("localhost", 1521, "XEPDB1", "labib", "labib");
+        OracleConnection con = GetDBConnection("localhost", 1521, "XEPDB1", "pos", "pos");
 
         public bool newCustomer(Customer customer)
         {
-            string insertQuery = "INSERT INTO Customer (Customer_ID, Name,Contact_Number, Email) VALUES (:CID, :name, :ConNum, :Email)";
+            string insertQuery = "INSERT INTO Customer (Name,Contact_Number, Email) VALUES (:name, :ConNum, :Email)";
             try
             {
 
@@ -68,7 +68,6 @@ namespace POS
                 command.Connection = con;
 
 
-                command.Parameters.Add("::CID", OracleDbType.Varchar2).Value = customer.CustomerID;
                 command.Parameters.Add(":name", OracleDbType.Varchar2).Value = customer.Name;
                 command.Parameters.Add(":ConNum", OracleDbType.Varchar2).Value = customer.PhoneNum;
                 command.Parameters.Add(":Email", OracleDbType.Varchar2).Value = customer.Email;
@@ -80,13 +79,13 @@ namespace POS
 
                 if (rowsInserted > 0)
                 {
-                    MessageBox.Show("Successfully Registered as a Receptionist!");
+                    MessageBox.Show("Customer Added!");
 
                     return true;
 
                 }
 
-                MessageBox.Show("Failed to register as a receptionist!");
+                MessageBox.Show("Customer Exist!");
 
                 return false;
 
