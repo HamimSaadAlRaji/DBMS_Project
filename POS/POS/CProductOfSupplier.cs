@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class CAddProductOfSupplier : Form
+    public partial class CProductOfSupplier : Form
     {
         Database db = Database.GetInstance();
         Supplier supplier;
-        public CAddProductOfSupplier(Supplier supplier)
+        public CProductOfSupplier(Supplier supplier)
         {
             InitializeComponent();
             this.supplier = supplier;
@@ -34,6 +34,13 @@ namespace POS
             {
                 ProductsOfSuppliers.Items.Add(product.ProductName);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            addNewProduct csupplierAddition = new addNewProduct(supplier);
+            this.Hide();
+            csupplierAddition.Show();
         }
     }
 }

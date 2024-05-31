@@ -12,10 +12,10 @@ namespace POS
 {
     public partial class CsupplierAddition : Form
     {
-        Database db = Database.GetInstance();
-        public CsupplierAddition()
+        Database db = Database.GetInstance(); 
+        public CsupplierAddition( )
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void contactNumTB_TextChanged(object sender, EventArgs e)
@@ -44,6 +44,11 @@ namespace POS
             CmanageSuppliers cmanageSuppliers = new CmanageSuppliers();
             this.Hide();
             cmanageSuppliers.Show();
+        }
+
+        private void CsupplierAddition_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

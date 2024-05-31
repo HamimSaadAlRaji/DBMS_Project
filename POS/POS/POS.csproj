@@ -84,6 +84,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addNewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNewProduct.Designer.cs">
+      <DependentUpon>addNewProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="BInventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +115,11 @@
     <Compile Include="BSettings.Designer.cs">
       <DependentUpon>BSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="CAddProductOfSupplier.cs">
+    <Compile Include="CProductOfSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CAddProductOfSupplier.Designer.cs">
-      <DependentUpon>CAddProductOfSupplier.cs</DependentUpon>
+    <Compile Include="CProductOfSupplier.Designer.cs">
+      <DependentUpon>CProductOfSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="CmanageBranch.cs">
       <SubType>Form</SubType>
@@ -182,6 +188,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="supplier.cs" />
+    <EmbeddedResource Include="addNewProduct.resx">
+      <DependentUpon>addNewProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BInventory.resx">
       <DependentUpon>BInventory.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,8 +203,8 @@
     <EmbeddedResource Include="BSettings.resx">
       <DependentUpon>BSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CAddProductOfSupplier.resx">
-      <DependentUpon>CAddProductOfSupplier.cs</DependentUpon>
+    <EmbeddedResource Include="CProductOfSupplier.resx">
+      <DependentUpon>CProductOfSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CmanageBranch.resx">
       <DependentUpon>CmanageBranch.cs</DependentUpon>

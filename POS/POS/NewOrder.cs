@@ -12,9 +12,11 @@ namespace POS
 {
     public partial class NewOrder : Form
     {
-        public NewOrder()
+        string branchID;
+        public NewOrder(string branchID)
         {
             InitializeComponent();
+            this.branchID = branchID;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -22,6 +24,11 @@ namespace POS
             BNewOrder2 bNewOrder2 = new BNewOrder2();
             this.Hide();
             bNewOrder2.Show();
+        }
+
+        private void NewOrder_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

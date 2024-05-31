@@ -1,6 +1,7 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Windows.Forms;
 namespace POS
 {
@@ -228,7 +229,7 @@ namespace POS
                 con.Close();
             }
             return isValid;
-        } 
+        }
 
         public Customer findCustomerByPhone(string phoneNum)
         {
@@ -378,7 +379,7 @@ namespace POS
             {
                 con.Open();
 
-                OracleCommand command = new OracleCommand(query, con); 
+                OracleCommand command = new OracleCommand(query, con);
                 command.Parameters.Add(":productID", OracleDbType.Varchar2).Value = productID;
                 using (OracleDataReader reader = command.ExecuteReader())
                 {
@@ -400,6 +401,79 @@ namespace POS
                 con.Close();
             }
             return tempProduct;
+        }
+
+        public void addProductofSupplier(Supplier supplier, Product product)
+        {
+            string insertQuery = "INSERT INTO Sourcing (Product_ID, Supplier_ID) VALUES (:Product_ID, :Supplier_ID)";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand();
+
+                command.CommandText = insertQuery;
+                command.Connection = con;
+                 
+                command.Parameters.Add(":Product_ID", OracleDbType.Varchar2).Value = product.ProductID;
+                command.Parameters.Add(":Supplier_ID", OracleDbType.Varchar2).Value = supplier.SupplierId;
+
+                int rowsInserted = command.ExecuteNonQuery();
+
+                con.Close(); 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred (sourcing): " + ex.Message);
+                con.Close();
+            }
+        }
+
+        public string addProduct(Product product) {
+            string insertQuery = "INSERT INTO Product (Name,Description,Price) VALUES (:Name, :Description,:Price)";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand();
+
+                command.CommandText = insertQuery;
+                command.Connection = con;
+
+                command.Parameters.Add(":Name", OracleDbType.Varchar2).Value = product.ProductName;
+                command.Parameters.Add(":Description", OracleDbType.Varchar2).Value = product.ProductDescription;
+                command.Parameters.Add(":Price", OracleDbType.Decimal).Value = product.Price;
+
+
+                 
+
+
+                int rowsInserted = command.ExecuteNonQuery(); 
+                con.Close();
+
+
+                string query = "SELECT * FROM (SELECT *  FROM Product ORDER BY Product_ID DESC) WHERE ROWNUM = 1";
+                con.Open();
+
+                command = new OracleCommand(query, con); 
+                using (OracleDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        product.ProductID = reader["Product_ID"].ToString(); 
+                    }
+                }
+                con.Close();
+
+
+                return product.ProductID;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error during fetching productID: " + ex.Message);
+                con.Close();
+            }
+            return null;
         }
     }
 }

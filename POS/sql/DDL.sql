@@ -184,9 +184,11 @@ END;
 /
 
 
-SELECT * from BRANCH;
-SELECT * from CUSTOMER;
+-- SELECT * from BRANCH;
+SELECT * from product;
+SELECT * from sourcing;
+SELECT * from SUPPLIER;
 
-select count(BRANCH_ID)
-from Credentials C
-where C.BRANCH_ID = 'brn00001';
+-- select count(BRANCH_ID)
+-- from Credentials C
+-- where C.BRANCH_ID = 'brn00001';
