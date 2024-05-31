@@ -146,6 +146,12 @@ C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.csproj.Up2Date
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.exe
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.pdb
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CsupplierAddition.resources
+<<<<<<< HEAD
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.addNewProduct.resources
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CProductOfSupplier.resources
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.addNewProductToBranch.resources
+=======
+C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CAddProductOfSupplier.resources
+E:\Study Materials\Academics\Fourth Semester\DBMS_Project\DBMS_Project\POS\POS\obj\Debug\POS.CAddProductOfSupplier.resources
+E:\Study Materials\Academics\Fourth Semester\DBMS_Project\DBMS_Project\POS\POS\obj\Debug\POS.CsupplierAddition.resources
+>>>>>>> c62eb2f36fae03436f59f6a90146276b760b3218
