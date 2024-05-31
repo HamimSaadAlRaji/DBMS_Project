@@ -14,9 +14,10 @@ namespace POS
     public partial class BManagerLogin : Form
     {
         Database db = Database.GetInstance();
-        public BManagerLogin()
+        string branchID;
+        public BManagerLogin( )
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace POS
 
             if (match) //check if branchID, pass is available
             { 
-                BDashboard mDashboard = new BDashboard();
+                BDashboard mDashboard = new BDashboard(branchID);
                 this.Hide();
                 mDashboard.Show();
             }
@@ -61,6 +62,11 @@ namespace POS
         }
 
         private void PassMismaatch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BManagerLogin_Load(object sender, EventArgs e)
         {
 
         }

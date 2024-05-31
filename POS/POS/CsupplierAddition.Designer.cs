@@ -143,6 +143,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CsupplierAddition";
             this.Text = "CsupplierAddition";
+            this.Load += new System.EventHandler(this.CsupplierAddition_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

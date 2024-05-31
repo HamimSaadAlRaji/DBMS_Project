@@ -12,30 +12,37 @@ namespace POS
 {
     public partial class BDashboard : Form
     {
-        public BDashboard()
+        string branchID;
+        public BDashboard(string branchID)
         {
             InitializeComponent();
+            this.branchID = branchID;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BInventory inventoryPage = new BInventory();
+            BInventory inventoryPage = new BInventory(branchID);
             this.Hide();
             inventoryPage.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NewOrder newOrder = new NewOrder();
+            NewOrder newOrder = new NewOrder(branchID);
             this.Hide();
             newOrder.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            BManagerLogin login = new BManagerLogin();
+            BManagerLogin login = new BManagerLogin(branchID);
             this.Hide();
             login.Show();
+        }
+
+        private void BDashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

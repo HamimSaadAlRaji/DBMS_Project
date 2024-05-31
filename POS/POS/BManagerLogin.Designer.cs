@@ -135,6 +135,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BManagerLogin";
             this.Text = "BManagerLogin";
+            this.Load += new System.EventHandler(this.BManagerLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

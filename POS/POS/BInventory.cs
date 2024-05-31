@@ -12,16 +12,23 @@ namespace POS
 {
     public partial class BInventory : Form
     {
-        public BInventory()
+        string branchID;
+        public BInventory(string branchID)
         {
             InitializeComponent();
+            this.branchID = branchID;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            BDashboard mDashboard = new BDashboard();
+            BDashboard mDashboard = new BDashboard(branchID);
             this.Hide();
             mDashboard.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

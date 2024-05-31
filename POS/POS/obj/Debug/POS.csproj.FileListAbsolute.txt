@@ -146,4 +146,5 @@ C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.csproj.Up2Date
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.exe
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.pdb
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CsupplierAddition.resources
-C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CAddProductOfSupplier.resources
+C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.addNewProduct.resources
+C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CProductOfSupplier.resources

@@ -55,7 +55,7 @@ namespace POS
                         break;
                     }
                 }
-                CAddProductOfSupplier addProductPage = new CAddProductOfSupplier(selectedSupplier);
+                CProductOfSupplier addProductPage = new CProductOfSupplier(selectedSupplier);
                 this.Hide();
                 addProductPage.Show();
             }

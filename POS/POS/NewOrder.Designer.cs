@@ -144,6 +144,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NewOrder";
             this.Text = "NewOrder";
+            this.Load += new System.EventHandler(this.NewOrder_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
