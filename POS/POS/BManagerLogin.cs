@@ -13,8 +13,7 @@ namespace POS
 {
     public partial class BManagerLogin : Form
     {
-        Database db = Database.GetInstance();
-        string branchID;
+        Database db = Database.GetInstance(); 
         public BManagerLogin( )
         {
             InitializeComponent(); 

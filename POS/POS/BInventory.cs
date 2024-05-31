@@ -13,6 +13,7 @@ namespace POS
     public partial class BInventory : Form
     {
         string branchID;
+        Database db = Database.GetInstance();
         public BInventory(string branchID)
         {
             InitializeComponent();
@@ -28,7 +29,9 @@ namespace POS
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            addNewProductToBranch anpb = new addNewProductToBranch(branchID);
+            this.Hide();
+            anpb.Show();
         }
     }
 }

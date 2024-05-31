@@ -400,6 +400,7 @@ namespace POS
                 MessageBox.Show("Error loading Product: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 con.Close();
             }
+            
             return tempProduct;
         }
 
@@ -474,6 +475,32 @@ namespace POS
                 con.Close();
             }
             return null;
+        }
+
+        public void addProductToInventory(string productID, string branchID)
+        {
+            string insertQuery = "INSERT INTO Inventory (Branch_ID,Product_ID, Quantity) VALUES (:Branch_ID,:Product_ID,0)";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand();
+
+                command.CommandText = insertQuery;
+                command.Connection = con;
+
+                command.Parameters.Add(":Product_ID", OracleDbType.Varchar2).Value = productID;
+                command.Parameters.Add(":Branch_ID", OracleDbType.Varchar2).Value = branchID;
+
+                int rowsInserted = command.ExecuteNonQuery();
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred (add product to inventory): " + ex.Message);
+                con.Close();
+            }
         }
     }
 }

@@ -35,7 +35,7 @@ namespace POS
 
         private void button5_Click(object sender, EventArgs e)
         {
-            BManagerLogin login = new BManagerLogin(branchID);
+            BManagerLogin login = new BManagerLogin();
             this.Hide();
             login.Show();
         }
