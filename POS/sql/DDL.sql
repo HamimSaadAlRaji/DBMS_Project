@@ -185,7 +185,7 @@ END;
 
 
 SELECT * from BRANCH;
-SELECT * from SOURCING;
+SELECT * from CUSTOMER;
 
 select count(BRANCH_ID)
 from Credentials C

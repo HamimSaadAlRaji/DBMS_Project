@@ -228,6 +228,43 @@ namespace POS
                 con.Close();
             }
             return isValid;
+        } 
+
+        public Customer findCustomerByPhone(string phoneNum)
+        {
+            Customer customer = null;
+            string query = "SELECT Name, Email FROM Customer WHERE Contact_Number = :PhoneNum";
+
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand(query, con);
+
+                // Adding parameters to avoid SQL injection
+                command.Parameters.Add(":PhoneNum", OracleDbType.Varchar2).Value = phoneNum;
+
+                // Execute the query and fetch the result
+                using (OracleDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        // Create a new Customer instance with the retrieved data
+                        customer = new Customer(
+                            phoneNum,
+                            reader["Name"].ToString(),
+                            reader["Email"].ToString()
+                        );
+                    }
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return customer;
         }
 
         public void AddSupplier(Supplier supplier)

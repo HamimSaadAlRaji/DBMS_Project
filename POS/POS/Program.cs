@@ -16,17 +16,8 @@ namespace POS
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CManageExistingSupplier());
-
-
-            //Database db = Database.GetInstance();
-            //List<Supplier> suppliers = db.getSupplierList();
-            //foreach (Supplier supplier in suppliers)
-            //{
-            //    Console.WriteLine(supplier.Address+supplier.ContactNum+supplier.SupplierName);
-            //}
-            //Console.ReadLine();
+            Application.SetCompatibleTextRenderingDefault(false); 
+            Application.Run(new LandingPge());  
         }
     }
 }
