@@ -13,6 +13,7 @@ namespace POS
     public partial class BNewOrder2 : Form
     {
         Database db = Database.GetInstance();
+        bool exist = false;
         public BNewOrder2()
         {
             InitializeComponent();
@@ -28,8 +29,53 @@ namespace POS
             string contactNum = contactNumTB.Text;
             string mail = mailTB.Text;
             string name = nameTB.Text;
-            Customer Cus = new Customer(contactNum, mail, name);
-            db.newCustomer(Cus);
+
+
+            if (mail != "" && name != "")
+            {
+                Customer Cus = new Customer(contactNum, mail, name);
+                db.newCustomer(Cus);
+            }
+            else
+            {
+                MessageBox.Show("Add Name and Email.");
+            }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string contact = contactNumTB.Text;
+
+            nameTB.Clear();
+            mailTB.Clear();
+            
+            // search in database
+
+            Customer cus = db.findCustomerByPhone(contact);
+
+
+            if (cus != null)
+            {
+                contactNumTB.Text = cus.PhoneNum;
+                mailTB.Text = cus.Email;
+                nameTB.Text = cus.Name;
+
+                exist = true;
+            }
+            else
+            {
+                label9.Text = "New Customer, Add Manually.";
+                exist = false;
+            }
+
+
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

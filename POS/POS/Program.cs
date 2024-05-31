@@ -17,7 +17,7 @@ namespace POS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CmanageBranch());
+            Application.Run(new BNewOrder2());
 
 
             //Database db = Database.GetInstance();
