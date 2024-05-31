@@ -147,3 +147,5 @@ C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.exe
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.pdb
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CsupplierAddition.resources
 C:\Users\User\Desktop\DBMS_Project\POS\POS\obj\Debug\POS.CAddProductOfSupplier.resources
+E:\Study Materials\Academics\Fourth Semester\DBMS_Project\DBMS_Project\POS\POS\obj\Debug\POS.CAddProductOfSupplier.resources
+E:\Study Materials\Academics\Fourth Semester\DBMS_Project\DBMS_Project\POS\POS\obj\Debug\POS.CsupplierAddition.resources

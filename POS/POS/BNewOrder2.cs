@@ -29,16 +29,19 @@ namespace POS
             string contactNum = contactNumTB.Text;
             string mail = mailTB.Text;
             string name = nameTB.Text;
-
-
-            if (mail != "" && name != "")
+              
+            if(!exist)
             {
-                Customer Cus = new Customer(contactNum, mail, name);
-                db.newCustomer(Cus);
-            }
-            else
-            {
-                MessageBox.Show("Add Name and Email.");
+                if (mail != "" && name != "")
+                {
+                    Customer Cus = new Customer(contactNum, mail, name);
+                    db.newCustomer(Cus);
+                }
+                else
+                {
+                    MessageBox.Show("Add Name and Email.");
+                }
+                
             }
             
         }
@@ -76,6 +79,18 @@ namespace POS
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BNewOrder2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            NewOrder nu = new NewOrder();
+            this.Hide();
+            nu.Show();
         }
     }
 }
