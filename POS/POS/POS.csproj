@@ -109,6 +109,12 @@
     <Compile Include="BSettings.Designer.cs">
       <DependentUpon>BSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAddProductOfSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAddProductOfSupplier.Designer.cs">
+      <DependentUpon>CAddProductOfSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="CmanageBranch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     </Compile>
     <Compile Include="CompanyManagerLogIn%281%29.Designer.cs">
       <DependentUpon>CompanyManagerLogIn%281%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsupplierAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsupplierAddition.Designer.cs">
+      <DependentUpon>CsupplierAddition.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
     <Compile Include="database.cs" />
@@ -182,6 +194,9 @@
     <EmbeddedResource Include="BSettings.resx">
       <DependentUpon>BSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CAddProductOfSupplier.resx">
+      <DependentUpon>CAddProductOfSupplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CmanageBranch.resx">
       <DependentUpon>CmanageBranch.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CompanyManagerLogIn%281%29.resx">
       <DependentUpon>CompanyManagerLogIn%281%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsupplierAddition.resx">
+      <DependentUpon>CsupplierAddition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPge.resx">
       <DependentUpon>LandingPge.cs</DependentUpon>

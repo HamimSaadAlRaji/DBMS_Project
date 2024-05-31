@@ -11,16 +11,17 @@ namespace POS
         public string ProductID { get; set; }
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
 
         // Parameterized constructor
-        public Product(string productID, string productName, string productDescription, int price)
+        public Product(string productID, string productName, string productDescription, decimal price)
         {
             ProductID = productID;
             ProductName = productName;
             ProductDescription = productDescription;
             Price = price;
         }
+        public Product() { }
     }
 
 }

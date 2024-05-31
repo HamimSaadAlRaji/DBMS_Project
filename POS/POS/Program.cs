@@ -16,13 +16,8 @@ namespace POS
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BNewOrder2());
-
-
-            //Database db = Database.GetInstance();
-            //Console.WriteLine( db.findBranchID("Main Branch", "123 Main St, City, Country"));
-            //Console.ReadLine();
+            Application.SetCompatibleTextRenderingDefault(false); 
+            Application.Run(new LandingPge());  
         }
     }
 }
