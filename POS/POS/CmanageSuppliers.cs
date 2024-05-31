@@ -19,7 +19,9 @@ namespace POS
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            CsupplierAddition csupplierAddition = new CsupplierAddition();
+            this.Hide();
+            csupplierAddition.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

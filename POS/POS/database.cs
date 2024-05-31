@@ -1,8 +1,7 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System;
-using System.Net;
+using System.Collections.Generic;
 using System.Windows.Forms;
-
 namespace POS
 {
     public sealed class Database
@@ -119,14 +118,14 @@ namespace POS
 
                 }
 
-                 
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
 
-            return findBranchID(b.branchName,b.Location);
+            return findBranchID(b.branchName, b.Location);
         }
         public string findBranchID(string branchName, string Adress)
         {
@@ -148,7 +147,7 @@ namespace POS
                     if (reader.Read())
                     {
                         // Return the Branch_ID
-                        result =  reader["Branch_ID"].ToString();
+                        result = reader["Branch_ID"].ToString();
                     }
                 }
                 con.Close();
@@ -231,7 +230,140 @@ namespace POS
             return isValid;
         }
 
+        public void AddSupplier(Supplier supplier)
+        {
+            string insertQuery = "INSERT INTO Supplier (Name, Address, Contact_Number) VALUES (:Name, :Address, :ContactNumber)";
+            try
+            {
+                con.Open();
 
+                OracleCommand command = new OracleCommand(insertQuery, con);
+                command.Parameters.Add(":Name", OracleDbType.Varchar2).Value = supplier.SupplierName;
+                command.Parameters.Add(":Address", OracleDbType.Varchar2).Value = supplier.Address;
+                command.Parameters.Add(":ContactNumber", OracleDbType.Varchar2).Value = supplier.ContactNum;
+
+                int rowsInserted = command.ExecuteNonQuery();
+                con.Close();
+
+                if (rowsInserted > 0)
+                {
+                    MessageBox.Show("Supplier Added!");
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add supplier.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                MessageBox.Show("An error occurred while adding the supplier." + ex.Message);
+                con.Close();
+
+            }
+
+        }
+        public List<Supplier> getSupplierList()
+        {
+            List<Supplier> list = new List<Supplier>();
+            try
+            {
+                string query = "SELECT * FROM Supplier";
+                using (OracleCommand command = new OracleCommand(query, con))
+                {
+                    con.Open();
+                    using (OracleDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Supplier supplier = new Supplier();
+                            supplier.SupplierId = reader["Supplier_ID"].ToString();
+                            supplier.SupplierName = reader["Name"].ToString();
+                            supplier.Address = reader["Address"].ToString();
+                            supplier.ContactNum = reader["Contact_Number"].ToString();
+                            list.Add(supplier);
+                        }
+                    }
+                    con.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading suppliers: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+            }
+            return list;
+        }
+
+        public List<Product> getProductListofSupplier(Supplier supplier)
+        {
+            List<string> productIDs = new List<string>();
+            List<Product> products = new List<Product>();
+            string query = "SELECT * FROM Sourcing where Supplier_ID = :suppID";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand(query, con);
+
+                // Adding parameters to avoid SQL injection
+                command.Parameters.Add(":suppID", OracleDbType.Varchar2).Value = supplier.SupplierId;
+                using (OracleDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string productID = reader["Product_ID"].ToString();
+                        productIDs.Add(productID);
+                    }
+                }
+                con.Close();
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading Products: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+            }
+            foreach (string productID in productIDs)
+            {
+                products.Add(getProductFromProductID(productID));
+            }
+            return products;
+        }
+
+        public Product getProductFromProductID(string productID)
+        {
+            Product tempProduct = new Product();
+            string query = "SELECT * FROM Product where Product_ID = :productID";
+            try
+            {
+                con.Open();
+
+                OracleCommand command = new OracleCommand(query, con); 
+                command.Parameters.Add(":productID", OracleDbType.Varchar2).Value = productID;
+                using (OracleDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        tempProduct.ProductID = reader["Product_ID"].ToString();
+                        tempProduct.ProductName = reader["Name"].ToString();
+                        tempProduct.ProductDescription = reader["Description"].ToString();
+                        tempProduct.Price = Convert.ToDecimal(reader["Price"]);
+                    }
+                }
+                con.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading Product: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+            }
+            return tempProduct;
+        }
     }
 }
 

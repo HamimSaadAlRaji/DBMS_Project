@@ -17,11 +17,15 @@ namespace POS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CmanageBranch());
+            Application.Run(new CManageExistingSupplier());
 
 
             //Database db = Database.GetInstance();
-            //Console.WriteLine( db.findBranchID("Main Branch", "123 Main St, City, Country"));
+            //List<Supplier> suppliers = db.getSupplierList();
+            //foreach (Supplier supplier in suppliers)
+            //{
+            //    Console.WriteLine(supplier.Address+supplier.ContactNum+supplier.SupplierName);
+            //}
             //Console.ReadLine();
         }
     }

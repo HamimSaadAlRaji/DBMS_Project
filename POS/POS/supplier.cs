@@ -14,12 +14,12 @@ namespace POS
         public string Address { get; set; }
 
     
-        public Supplier(string supplierId, string supplierName, string contactNum, string address)
+        public Supplier(string supplierName, string contactNum, string address)
         {
-            SupplierId = supplierId;
             SupplierName = supplierName;
             ContactNum = contactNum;
             Address = address;
         }
+        public Supplier() { }
     }
 }
